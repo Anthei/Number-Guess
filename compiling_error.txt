@@ -1,8 +1,6 @@
 C:\Users\disco\Documents\atomIDE\Anthei\Number-Guess\main.c: In function 'main':
-C:\Users\disco\Documents\atomIDE\Anthei\Number-Guess\main.c:18:3: warning: implicit declaration of function 'srand' [-Wimplicit-function-declaration]
-   srand(time(NULL));
-   ^
-C:\Users\disco\Documents\atomIDE\Anthei\Number-Guess\main.c:26:8: error: 'answer' undeclared (first use in this function)
-    if (answer == guess)
-        ^
-C:\Users\disco\Documents\atomIDE\Anthei\Number-Guess\main.c:26:8: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\disco\Documents\atomIDE\Anthei\Number-Guess\main.c:18:11: warning: implicit declaration of function 'srand' [-Wimplicit-function-declaration]
+  answer = srand(time(NULL));
+           ^
+C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file C:\Users\disco\AppData\Local\Temp\main.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
