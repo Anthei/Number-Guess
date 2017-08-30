@@ -32,7 +32,7 @@ int main()
 		else
 		{
 			correct = 0;
-			printf("You guessed wrong. Try again? Y/N \n");
+			printf("You guessed wrong. Try again? 1 = Yes / 0 = N \n");
 			scanf("%d",cont);
 			printf("\n");
 		}
