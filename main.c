@@ -16,14 +16,6 @@ int main()
 	//Number generator
 
 
-//----------------------------DO WHILE RAND------------------------------------
-  do{
-    int answer = rand();
-  }while(answer < LOW || answer >= HIGH);
-  //Creates a proper distribution of random numbers
-//----------------------------DO WHILE RAND------------------------------------
-
-
 
 	do {
 		printf("Test");
