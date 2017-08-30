@@ -15,7 +15,8 @@ int main()
 	printf("Guess a number between %d and %d\n", HIGH, LOW);
 	//Prompts user for input
 
-	answer = srand(time(NULL));
+	srand(time(NULL));
+  answer = rand();
 	//Number generator
 
 	do {
