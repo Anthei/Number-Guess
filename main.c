@@ -11,35 +11,31 @@ int main()
   int cont = 1;
   int guess;
 
-	do { 
-		printf("Guess a number between %d and %d\n", HIGH, LOW);
-		//Prompts user for input
+	printf("Guess a number between %d and %d\n", HIGH, LOW);
+	//Prompts user for input
+	
+	srand(time(NULL));
+	//Number generator
+	
+	do {
+		printf("Your guess: ");
+		scanf("d%", guess);
+		printf("\n");
 		
-		srand(time(NULL));
-		//Number generator
-		
-		do {
-			printf("Your guess: ");
-			scanf("d%", guess);
+		if (answer == guess)
+		{
+			correct = 1;
+			printf("You guessed right!\n");
+		}
+		else 
+		{
+			correct = 0;
+			printf("You guessed wrong. Try again? Y/N \n");
+			scanf("%d",cont);
 			printf("\n");
-			
-			if (answer == guess)
-			{
-				correct = 1;
-				printf("You guessed right!\n");
-			}
-			else 
-			{
-				correct = 0;
-				printf("You guessed wrong. Try again? Y/N \n");
-				scanf("%d",cont);
-				printf("\n");
-			}
-			
-		} while (cont == 1);
-		//guessing
+		}
 		
-	} while (game == 1);
-	//main game loop
+	} while (cont == 1);
+	//guessing
 	
 }
