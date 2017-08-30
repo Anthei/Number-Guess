@@ -10,11 +10,12 @@ int main()
   int correct = 0;
   int cont = 1;
   int guess;
+  int answer;
 
 	printf("Guess a number between %d and %d\n", HIGH, LOW);
 	//Prompts user for input
 	
-	srand(time(NULL));
+	answer = srand(time(NULL));
 	//Number generator
 	
 	do {
