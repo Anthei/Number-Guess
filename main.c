@@ -6,19 +6,40 @@ int main()
 {
   const int HIGH = 11; 		// Easy range edit for high
   const int LOW = 0;		// Easy range edit for low
-  int flag = 0;
+  int game = 1;
+  int correct = 0;
+  int cont = 1;
+  int guess;
 
-
-  printf("Guess a number between %d and %d", HIGH, LOW);
-	//Prompts user for input
-
-	srand(time(NULL));
-	//Number generator
-
-
-
-	do {
-		printf("Test");
-	} while (flag == 1)
-
+	do { 
+		printf("Guess a number between %d and %d\n", HIGH, LOW);
+		//Prompts user for input
+		
+		srand(time(NULL));
+		//Number generator
+		
+		do {
+			printf("Your guess: ");
+			scanf("d%", guess);
+			printf("\n");
+			
+			if (answer == guess)
+			{
+				correct = 1;
+				printf("You guessed right!\n");
+			}
+			else 
+			{
+				correct = 0;
+				printf("You guessed wrong. Try again? Y/N \n");
+				scanf("%d",cont);
+				printf("\n");
+			}
+			
+		} while (cont == 1);
+		//guessing
+		
+	} while (game == 1);
+	//main game loop
+	
 }
