@@ -9,8 +9,8 @@ int main()
   int game = 1;
   int correct = 0;
   int cont = 1;
-  int guess;
-  int answer;
+  int guess = 0;
+  int answer = 0;
 
 	printf("Guess a number between %d and %d\n", HIGH, LOW);
 	//Prompts user for input
