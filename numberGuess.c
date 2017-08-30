@@ -9,7 +9,7 @@ int main()
 	int guess, answer, keepGoing = 1;
 	char userInput;
 
-	printf("Guess a number between %d and %d", HIGH, LOW);
+	printf("Guess a number between %d and %d\n\n Guess: ", HIGH, LOW);
 	//Prompts user for input
 
 	srand(time(NULL));
@@ -34,7 +34,7 @@ int main()
 		//Space before modifier to skip leading white space
 		//and first non-white character
 		scanf(" %c",answer);
-		
+
 		if(userInput == 'n' || userInput == 'N')
 			keepGoing = 0;
 
